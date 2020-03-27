@@ -4,6 +4,8 @@ var roleBuilder = require('role.builder');
 //var roleTower = require('tower.atk');
 var spawnerHarvesterLVL1 = require('spawner.harvester.lvl1');
 var spawnerbuilderLVL1 = require('spawner.builder.lvl1');
+var spawnerupgraderLVL1 = require('spawner.upgrader.lvl1');
+
 
 //Cada turno (Tick) roda o que tiver dentro deste loop
 module.exports.loop = function () {
@@ -31,6 +33,7 @@ module.exports.loop = function () {
         if(spawns.name = 'Spawn1') {
             spawnerHarvesterLVL1.run(spawns)
             spawnerbuilderLVL1.run(spawns)
+            spawnerupgraderLVL1.run(spawns)
         }
     }
 
