@@ -2,6 +2,21 @@ var creepSpawner = {
 
     run: function(spawns) {
 
+        for(var name in Memory.creeps) {
+            if(!Game.creeps[name]) {
+                delete Memory.creeps[name];
+                console.log('Clearing non-existing creep memory:', name);
+            }
+        }
+    
+
+        if(harvesters.length < 2) {
+            var newName = 'Harvester' + Game.time;
+            console.log('Spawning new harvester: ' + newName);
+            Game.spawns['Spawn1'].spawnCreep([WORK,CARRY,MOVE], newName,
+                {memory: {role: 'harvester'}});
+        }
+
        if(Game.spawns['Spawn1'].spawning) {
             var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
             Game.spawns['Spawn1'].room.visual.text(

@@ -4,6 +4,7 @@ var roleBuilder = require('role.builder');
 var roleTower = require('tower.atk');
 var creepSpawner = require('creep.spawner');
 
+
 module.exports.loop = function () {
 
 
@@ -31,4 +32,14 @@ module.exports.loop = function () {
             creepSpawner.run(spawns)
         }
     }
+//Roda o memory cleaner
+for(var name in Memory.creeps) {
+    if(!Game.creeps[name]) {
+        delete Memory.creeps[name];
+        console.log('Clearing non-existing creep memory:', name);
+    }
+}
+
+
+
 }
