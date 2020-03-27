@@ -3,7 +3,7 @@ var creepSpawner = {
     run: function(spawns) {
 
         var harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
-        console.log('Harvesters: ' + harvesters.length);
+        //console.log('Harvesters: ' + harvesters.length);
 
 
         if(harvesters.length < 2) {
