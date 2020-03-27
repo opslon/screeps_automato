@@ -1,6 +1,6 @@
 var creepSpawner = {
 
-    run: function(spawn) {
+    run: function(spawns) {
 
        if(Game.spawns['Spawn1'].spawning) {
             var spawningCreep = Game.creeps[Game.spawns['Spawn1'].spawning.name];
