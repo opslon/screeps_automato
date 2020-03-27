@@ -1,10 +1,10 @@
-var roleHarvester = require('role.harvester');
-var roleUpgrader = require('role.upgrader');
-var roleBuilder = require('role.builder');
+var roleHarvester = require('./roles/role.harvester');
+var roleUpgrader = require('./roles/role.upgrader');
+var roleBuilder = require('./roles/role.builder');
 //var roleTower = require('tower.atk');
-var spawnerHarvesterLVL1 = require('spawner.harvester.lvl1');
-var spawnerbuilderLVL1 = require('spawner.builder.lvl1');
-var spawnerupgraderLVL1 = require('spawner.upgrader.lvl1');
+var spawnerHarvesterLVL1 = require('./spawners/spawner.harvester.lvl1');
+var spawnerbuilderLVL1 = require('./spawners/spawner.builder.lvl1');
+var spawnerupgraderLVL1 = require('./spawners/spawner.upgrader.lvl1');
 
 
 //Cada turno (Tick) roda o que tiver dentro deste loop
