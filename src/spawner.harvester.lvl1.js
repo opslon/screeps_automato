@@ -1,4 +1,4 @@
-var creepSpawner = {
+var spawnerHarvesterLVL1 = {
 
     run: function(spawns) {
 
@@ -24,4 +24,4 @@ var creepSpawner = {
     }
 };
 
-module.exports = creepSpawner;
+module.exports = spawnerHarvesterLVL1;
