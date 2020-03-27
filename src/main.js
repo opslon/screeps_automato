@@ -28,7 +28,7 @@ module.exports.loop = function () {
     for(var name in Game.spawns) {
         var spawns = Game.spawns[name];
         if(spawns.name = 'Spawn1') {
-            creepSpawner.run(spawns)
+            spawnerHarvesterLVL1.run(spawns)
         }
     }
 
